@@ -32,6 +32,6 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('/todo2/task', 'Tasks2Controller@store');
 
     /** Delete Task*/
-    Route::post('/todo2/task/{id}', 'Tasks2Controller@destroy');
+    Route::delete('/todo2/task/{id}', 'Tasks2Controller@destroy');
 });
 
